@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat';
+  color: #fff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+}
+*::selection {
+  background-color: #fff;
+  color: #4B1B5A;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  background: #4B1B5A;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+
+  border-radius: 50px;
+}
+
+
+
+/* Home Page */
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+
+}
+
+#main {
+  position: relative;
+
+}
+
+#backgroundblack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.37);
+}
+
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+#page1 h1 {
+  font-size: 70px;
+  font-weight: 800;
+  position: relative;
+  margin-bottom: 20px;
+
+}
+
+#page1 h1::before {
+  content: "FUND VOYAGER";
+  position: absolute;
+  color: black;
+  top: -4px;
+  left: -4px;
+  -webkit-text-stroke: 2px #FFC436;
+  z-index: -1;
+}
+
+#page1 p {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* animation  */
+.animation{
+  height: 180px;
+  width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+#lottie-container{
+  height: auto;
+  width: 290px;
+}
+
+/* button  */
+.space-button {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.space-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.space-button svg {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+}
+
+.space-button:hover {
+  background-color: #1A123B;
+  color: black;
+}
+
+.space-button:hover svg {
+  transform: translateX(4px);
+}
+
+.space-button:active {
+  background-color: #f94b4c;
+  color: #fff;
+}
+
+
+
+/* About US  */
+#about-us {
+  height: 80vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+}
+
+about-us-ani
+
+#about-us-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+#about-us-ani{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+#about-us-in img {
+  width: 200px;
+  height: auto;
+}
+
+#about-us h3 {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+#about-us-in p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+
+
+
+/* card section for scholarship  */
+.scholarship-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scholarship-cards h1 {
+  font-size: 60px;
+}
+
+#cards-container {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+  height: 80%;
+  width: 24%;
+
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+
+#card1 {
+  background-image: url(/img/images.jpg);
+}
+
+#card2 {
+  background-image: url(/img/MIT.jpg);
+}
+
+#card3 {
+  background-image: url(/img/stndford.jpg);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #FFC436;
+  padding: 26px;
+  padding-top: 32px;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+
+.overlay h4 {
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.overlay h3 {
+  font-size: 30px;
+  color: #000;
+}
+
+.overlay p {
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.applybtn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #191d88;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-shadow: 0px 4px 18px #2c3442;
+
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
+
+}
+
+
+/* Our Review  */
+.review {
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review h1 {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+
+
+.review-cards {
+  gap: 145px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.Rcard {
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  width: 240px;
+  height: 360px;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 10px 10px 20px rgb(25, 25, 25, 0.6),
+    -10px -10px 20px rgb(60, 60, 60, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Rcard h4 {
+  font-size: 26px;
+
+}
+
+.Rcard img {
+  width: 70px;
+  height: auto;
+}
+
+/* login appeal  */
+
+
+.appeal-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.appeal-login h3 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255),
+    0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255),
+    0 0 100px rgb(0, 140, 255);
+}
+
+#page4 h1 {
+  font-size: 6.4vw;
+  position: absolute;
+  top: -15%;
+  font-weight: 900;
+  font-family: gilroy;
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+}
+
+#footer {
+  height: 20vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #337CCF 0%, #FFC436 80%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5vw;
+  padding: 0 100px;
+}
+
+.footer-img{
+  height: auto;
+  width: 37px;
+  
+}
+
+#footer>img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+#f1 img {
+  height: 100px;
+}
+
+#f1,
+#f2,
+#f3,
+#f4 {
+  width: fit-content;
+  position: relative;
+  z-index: 99;
+  /* background-color: red; */
+}
+
+#f2 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+#f3 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+#f4 h4 {
+  font-size: 1vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
